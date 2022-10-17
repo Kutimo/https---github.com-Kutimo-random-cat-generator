@@ -1,5 +1,5 @@
 <script>
-    const CatNameAndBreed = ['catName', 'breed'];
+ /*    const CatNameAndBreed = ['catName', 'breed']; */
  let data = {
     catData: undefined,
     loading: false,
@@ -7,14 +7,14 @@
  /* let CatNameAndBreed; */
     async function LoadData() {
         data.loading = true;
-        const response = await fetch('/random-cat')
+        const response = await fetch('http://localhost:3001/random-cat')
         const CatNameAndBreed = await response.json();
         data = {
             catData: CatNameAndBreed,
             loading: false,
         };
     }
-    console.log(CatNameAndBreed) 
+ 
 </script>
 
 <button on:click={LoadData}>Generate Breed and Name!</button>
