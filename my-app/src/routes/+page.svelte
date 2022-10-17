@@ -8,7 +8,7 @@ import { onMount } from "svelte";
         <main>
         <div class="generator">
             <h2>Cat name and breed generator</h2>
-            <Button result="any"></Button>
+            <Button></Button>
             </div>
             </main>
 

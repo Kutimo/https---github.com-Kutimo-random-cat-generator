@@ -1,10 +1,8 @@
 <script>
- /*    const CatNameAndBreed = ['catName', 'breed']; */
  let data = {
     catData: undefined,
     loading: false,
  };
- /* let CatNameAndBreed; */
     async function LoadData() {
         data.loading = true;
         const response = await fetch('http://localhost:3001/random-cat')
@@ -14,7 +12,7 @@
             loading: false,
         };
     }
- 
+
 </script>
 
 <button on:click={LoadData}>Generate Breed and Name!</button>
